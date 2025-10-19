@@ -31,4 +31,4 @@ echo "NUM_OF_NODES= ${NNODES} TOTAL_NUM_RANKS= ${NTOTRANKS} RANKS_PER_NODE= ${NR
 # For applications that need mpiexec to bind MPI ranks to GPUs
 mpiexec -n ${NTOTRANKS} --ppn ${NRANKS_PER_NODE} --depth=${NDEPTH} --cpu-bind depth \
 --env OMP_NUM_THREADS=${NTHREADS} -env OMP_PLACES=threads ./set_affinity_gpu_polaris.sh \
-/ptn_loading 2d_cylinder.msh 2d_cylinder_4.ptn 1 3
+./ptn_loading 2d_cylinder.msh 2d_cylinder_4.ptn 1 3
